@@ -24,8 +24,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "node init && tsup",
+    "dev": "node init && tsup --watch",
     "test": "vitest run",
     "mutation": "stryker run --incremental --force",
     "mutation:incremental": "stryker run --incremental",
